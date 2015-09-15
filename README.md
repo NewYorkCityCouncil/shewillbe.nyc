@@ -1,6 +1,6 @@
-# Memer
+# She Will Be
 
-A client-side meme generator.
+New York City Council Young Women's Initiative
 
 ## Requirements
 
