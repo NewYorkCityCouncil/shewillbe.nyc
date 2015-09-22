@@ -3,17 +3,8 @@
 $(document).foundation();
 
 
-// Define Fonts (https://github.com/typekit/webfontloader):
-WebFontConfig = {
-  google:{ families: ['Titillium Web:300,300italic,700,700italic', 'Permanent Marker'] },
-  active: function(){addBrandText();},
-};
-(function(){
-  var wf = document.createElement("script");
-  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js';
-  wf.async = 'true';
-  document.head.appendChild(wf);
-})();
+$( document ).ready(function() {
+});
 
 
 // Prepare the canvas:
