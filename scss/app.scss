@@ -56,6 +56,15 @@
   Typography, Colors, Backgrounds
 --------------------------------------------------*/
 
+.browsehappy {
+  color: $off-white;
+  background-color: $red;
+  a {
+    color: $off-white;
+    text-decoration: underline;
+  }
+}
+
 body {
   background: $tan-light url(../images/grid.gif) 0 0 repeat;
   @media #{$retina} {
