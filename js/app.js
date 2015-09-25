@@ -187,5 +187,5 @@ function saveImage(e){
         format: 'jpeg',
         quality: 0.8
     });
-    this.download = 'test.jpg'
+    this.download = 'shewillbe.jpg'
  }
