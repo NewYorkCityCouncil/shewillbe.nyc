@@ -405,7 +405,8 @@ img {
   }
 }
 
-.canvas-container {
+ .canvas-wrapper,
+ .canvas-container {
   position: relative;
   width: 100% !important;
   height: 0 !important;

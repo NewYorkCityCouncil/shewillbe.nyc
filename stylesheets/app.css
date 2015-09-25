@@ -11022,6 +11022,7 @@ img.inline-icon {
 }
 
 /* line 408, ../scss/app.scss */
+.canvas-wrapper,
 .canvas-container {
   position: relative;
   width: 100% !important;
@@ -11030,7 +11031,7 @@ img.inline-icon {
   margin: auto;
 }
 
-/* line 415, ../scss/app.scss */
+/* line 416, ../scss/app.scss */
 #canvas {
   position: absolute;
   top: 0;
@@ -11040,7 +11041,7 @@ img.inline-icon {
   height: 100% !important;
 }
 
-/* line 423, ../scss/app.scss */
+/* line 424, ../scss/app.scss */
 .upper-canvas {
   width: 100% !important;
   height: 100% !important;

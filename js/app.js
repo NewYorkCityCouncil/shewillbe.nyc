@@ -9,44 +9,20 @@ $( document ).ready(function() {
 
 // Prepare the canvas:
 var canvas = new fabric.Canvas('canvas',{
-    backgroundColor: 'rgb(160,160,160)'
+    backgroundColor: '#333333'
 });
 
 
-// Add image overlay to make text readable:
-var overlay = new fabric.Rect({
-  // turn off interractions...
-  evented: false,
-  selectable: false,
-  // add some style...
-  left: 0,
-  top: 0,
-  fill: 'rgba(0,0,0,0.25)',
-  width: canvas.width,
-  height: canvas.height
-});
-canvas.add(overlay);
-
-
-// Add brand text:
-var brandText = new fabric.Text(
-    '#SheWillBe', {
-        // turn off interractions...
+// Add image overlay:
+fabric.Image.fromURL('images/selfie-overlay.png', function(img) {
+    img.set({
         evented: false,
         selectable: false,
-        // add some style...
-        fontFamily: 'Titillium Web',
-        fontSize: 75,
-        fontStyle: 'normal',
-        fontWeight: '700',
-        fill: 'rgba(255,255,255,1)',
-        opacity: 1,
-        left: 15,
-        top: 10,
-        textAlign: 'left'
-    }
-);
-canvas.add(brandText);
+        left: 0,
+        top: 0
+    });
+    canvas.add(img);
+});
 
 
 // Load an image:
@@ -121,7 +97,7 @@ var userText = new fabric.IText(
     '', {
         // set interractions...
         centeredScaling: true,
-        cursorColor: 'rgba(255,255,255,1)',
+        cursorColor: '#272727',
         cursorWidth: 8,
         hoverCursor: 'pointer',
         hasControls: false,
@@ -135,11 +111,11 @@ var userText = new fabric.IText(
         fontStyle: 'normal',
         fontWeight: '700',
         lineHeight: 0.7,
-        fill: 'rgba(255,255,255,1)',
-        opacity: 1,
-        selectionColor: 'rgba(17,119,255,0.5)',
+        fill: '#272727',
+        opacity: 0.85,
+        selectionColor: 'rgba(153,243,255,0.5)',
         left: canvas.height / 2,
-        top: canvas.height - 60,
+        top: canvas.height - 100,
         originY: 'bottom',
         originX: 'center',
         textAlign: 'center'
