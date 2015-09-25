@@ -128,7 +128,6 @@ function memeText(e){
     // activate it...
     canvas.setActiveObject(userText);
     userText.enterEditing();
-    userText.hiddenTextarea.focus();
     // show/hide buttons for saving...
     $('#button--add-text').addClass('button-off');
     $('#button--save').removeClass('button-off');
