@@ -4,6 +4,9 @@ $(document).foundation();
 
 
 $( document ).ready(function() {
+  $('textarea').bind('focusin focus', function(e){
+  e.preventDefault();
+})
 });
 
 
