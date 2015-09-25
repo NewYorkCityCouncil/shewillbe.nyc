@@ -52,6 +52,10 @@
 }
 
 
+/*--------------------------------------------------
+  Typography, Colors, Backgrounds
+--------------------------------------------------*/
+
 body {
   background: $tan-light url(../images/grid.gif) 0 0 repeat;
   @media #{$retina} {
@@ -59,21 +63,31 @@ body {
     background-size: 20px 100px;
   }
 }
-
-
-/*--------------------------------------------------
-  Typography
---------------------------------------------------*/
+.alt-bg {
+  color: $off-white;
+  background-color: $red;
+  background: -moz-linear-gradient(left,  rgba($slate,1) 0%, rgba($red,1) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba($slate,1)), color-stop(100%,rgba($red,1)));
+  background: -webkit-linear-gradient(left,  rgba($slate,1) 0%,rgba($red,1) 100%);
+  background: -o-linear-gradient(left,  rgba($slate,1) 0%,rgba($red,1) 100%);
+  background: -ms-linear-gradient(left,  rgba($slate,1) 0%,rgba($red,1) 100%);
+  background: linear-gradient(to right,  rgba($slate,1) 0%,rgba($red,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b5363', endColorstr='#d95762',GradientType=1 );
+}
 
 // Can't set color:inherit in _settings.scss 'cause $header-font-color is used in subheader/small/blockquote calculations.
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6 {
   color: inherit;
+  &.marker {
+    font-family: $font-marker;
+    color: $oil;
+    opacity: 0.85;
+  }
 }
 
 // Differently-sized paragraphs
 p {
-  max-width: 45em;
+  max-width: 48em;
 	&, ul, ol {
 	  &.text-small {
 	    font-size: rem-calc(13);
@@ -105,6 +119,23 @@ small.xsmall {
 
 .color-oil   { color: $oil; }
 .color-slate { color: $slate; }
+
+.shadowed {
+  box-shadow: 8px 8px 0 rgba($oil, 0.2);
+}
+
+.ghosted {
+  img {
+    opacity: 0.5;
+    -webkit-transition: opacity .25s ease;
+       -moz-transition: opacity .25s ease;
+            transition: opacity .25s ease;
+    -webkit-backface-visibility: hidden;
+  }
+  &:hover img {
+    opacity: 1;
+  }
+}
 
 
 /*--------------------------------------------------
@@ -282,8 +313,8 @@ img {
   background-size: cover;
   overflow-x: hidden;
   min-height: rem-calc(300);
-  @media #{$medium-up} { min-height: rem-calc(400); }
-  @media #{$large-up}  { min-height: rem-calc(500); }
+  @media #{$large-up}  { min-height: rem-calc(400); }
+  @media #{$xlarge-up} { min-height: rem-calc(500); }
 }
 
 .intro-hashtag {
@@ -295,9 +326,9 @@ img {
   padding: 0;
   line-height: 1.2;
   font-size: $h2-font-size;
-  @media #{$medium-up} { font-size: rem-calc(60); }
-  @media #{$large-up}  { font-size: rem-calc(70); }
-  @media #{$xlarge-up} { font-size: rem-calc(90); }
+  @media #{$medium-up}  { font-size: rem-calc(60); }
+  @media #{$xlarge-up}  { font-size: rem-calc(70); }
+  @media #{$xxlarge-up} { font-size: rem-calc(90); }
   span {
     font-family: $font-marker;
     position: absolute;
@@ -307,14 +338,13 @@ img {
     opacity: 0.85;
     margin-top: -0.5em;
     left: 0.5em;
-    @media #{$medium-up} { left: 29%; margin-top: -0.62em; }
-    @media #{$large-up} { left: 57.5%; margin-top: -0.62em; }
+    @media #{$large-up}  { left: 29%; margin-top: -0.62em; }
+    @media #{$xlarge-up} { left: 57.5%; margin-top: -0.62em; }
   }
 }
 
 .intro-call-to-action {
   padding: 0.375em 0.5em;
-  background-color: $red;
   max-width: 11.75em;
   text-align: center;
   color: $off-white;
@@ -323,13 +353,13 @@ img {
   line-height: 1.2;
   @media #{$medium-up} { font-size: $h5-font-size; max-width: none; margin-left: $column-gutter/-2; text-align: left; }
   @media #{$large-up}  { font-size: $h4-font-size; }
-  /* http://colorzilla.com/gradient-editor/#d95762+5,4b5363+95&amp;0.7+0,0.7+100 */
-  background: -moz-linear-gradient(left,  rgba(217,87,98,0.7) 0%, rgba(75,83,99,0.7) 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(217,87,98,0.7)), color-stop(100%,rgba(75,83,99,0.7)));
-  background: -webkit-linear-gradient(left,  rgba(217,87,98,0.7) 0%,rgba(75,83,99,0.7) 100%);
-  background: -o-linear-gradient(left,  rgba(217,87,98,0.7) 0%,rgba(75,83,99,0.7) 100%);
-  background: -ms-linear-gradient(left,  rgba(217,87,98,0.7) 0%,rgba(75,83,99,0.7) 100%);
-  background: linear-gradient(to right,  rgba(217,87,98,0.7) 0%,rgba(75,83,99,0.7) 100%);
+  background-color: $red;
+  background: -moz-linear-gradient(left,  rgba($red,0.7) 0%, rgba($slate,0.7) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba($red,0.7)), color-stop(100%,rgba($slate,0.7)));
+  background: -webkit-linear-gradient(left,  rgba($red,0.7) 0%,rgba($slate,0.7) 100%);
+  background: -o-linear-gradient(left,  rgba($red,0.7) 0%,rgba($slate,0.7) 100%);
+  background: -ms-linear-gradient(left,  rgba($red,0.7) 0%,rgba($slate,0.7) 100%);
+  background: linear-gradient(to right,  rgba($red,0.7) 0%,rgba($slate,0.7) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3d95762', endColorstr='#b34b5363',GradientType=1 );
 }
 
@@ -338,12 +368,40 @@ img {
   Canvas
 --------------------------------------------------*/
 
+.memer {
+  position: relative;
+  background: $off-white;
+  color: $slate;
+  border: rem-calc(8) solid $off-white;
+  @media #{$large-up} {
+    margin-top: -6.25rem;
+  }
+  @media #{$xlarge-up} {
+    margin-top: -7.5rem;
+    border-width: rem-calc(12);
+  }
+}
+.memer--buttons {
+  background: $iron;
+  position: relative;
+  label, button {
+    position: absolute;
+  }
+  a, label, button {
+    font-size: $h4-font-size;
+    padding: rem-calc(12);
+  }
+  .button-off {
+    margin-left: -99999px !important;
+  }
+}
+
 .canvas-container {
   position: relative;
   width: 100% !important;
   height: 0 !important;
   padding-bottom: 100%;
-  margin: $paragraph-margin-bottom auto;
+  margin: auto;
 }
 #canvas {
   position: absolute;

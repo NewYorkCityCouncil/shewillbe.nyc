@@ -87,8 +87,8 @@ function handleImage(e){
             canvas.centerObject(imgInstance);
             canvas.sendToBack(imgInstance);
             // We have an image, so hide file input + show text button...
-            $('#button--add-text').removeClass('hide');
-            $('#input-button').addClass('hide');
+            $('#button--add-text').removeClass('button-off');
+            $('#input-button').addClass('button-off');
         }
         img.src = event.target.result;
     }
@@ -154,8 +154,8 @@ function memeText(e){
     userText.enterEditing();
     userText.hiddenTextarea.focus();
     // show/hide buttons for saving...
-    $('#button--add-text').addClass('hide');
-    $('#button--save').removeClass('hide');
+    $('#button--add-text').addClass('button-off');
+    $('#button--save').removeClass('button-off');
 }
 
 
