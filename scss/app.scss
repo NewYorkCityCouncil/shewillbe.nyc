@@ -43,8 +43,301 @@
 // Foundation's .hide class is weak.
 .hide { display: none !important; }
 
+// collapse empty title
+.top-bar {
+  box-shadow: 0 5px 0 rgba($slate, 0.1);
+  .name h1 a {
+    padding: 0;
+  }
+}
 
-// the canvas
+
+body {
+  background: $tan-light url(../images/grid.gif) 0 0 repeat;
+  @media #{$retina} {
+    background-image: url(../images/grid@2x.gif);
+    background-size: 20px 100px;
+  }
+}
+
+
+/*--------------------------------------------------
+  Typography
+--------------------------------------------------*/
+
+// Can't set color:inherit in _settings.scss 'cause $header-font-color is used in subheader/small/blockquote calculations.
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: inherit;
+}
+
+// Differently-sized paragraphs
+p {
+  max-width: 45em;
+	&, ul, ol {
+	  &.text-small {
+	    font-size: rem-calc(13);
+	  }
+	  &.text-large {
+	    // font-size: 1.25rem;
+			font-size: rem-calc(19);
+	  }
+	  &.text-xlarge {
+	    // font-size: 1.5rem;
+			font-size: rem-calc(21);
+	  }
+	  &.text-xxlarge {
+	    // font-size: 1.75rem;
+			font-size: rem-calc(24);
+	  }
+	}
+}
+
+small.xsmall {
+	font-size: 60%;
+}
+.no-outline {
+	outline: 0;
+}
+.no-break {
+	white-space: nowrap;
+}
+
+.color-oil   { color: $oil; }
+.color-slate { color: $slate; }
+
+
+/*--------------------------------------------------
+  Grid & Box Model
+--------------------------------------------------*/
+
+// Add .full-width to .row and the element fills the width of the page (or container).
+.full-width {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+}
+.relative {
+	position: relative;
+}
+
+// Margin for specific grid elements, e.g. between header & content or at bottom of page.
+.no-margin {
+  margin: 0 !important;
+}
+.no-margin-top {
+  margin-top: 0 !important;
+}
+.no-margin-right {
+  margin-right: 0 !important;
+}
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+.no-margin-left {
+  margin-left: 0 !important;
+}
+
+.tiny-margin {
+  margin: 0.5rem !important;
+}
+.tiny-margin-top {
+  margin-top: 0.5rem !important;
+}
+.tiny-margin-right {
+  margin-right: 0.5rem !important;
+}
+.tiny-margin-bottom {
+  margin-bottom: 0.5rem !important;
+}
+.tiny-margin-left {
+  margin-left: 0.5rem !important;
+}
+
+.some-margin {
+  margin: 1.5rem !important;
+}
+.some-margin-top {
+  margin-top: 1.5rem !important;
+}
+.some-margin-right {
+  margin-right: 1.5rem !important;
+}
+.some-margin-bottom {
+  margin-bottom: 1.5rem !important;
+}
+.some-margin-left {
+  margin-left: 1.5rem !important;
+}
+
+.extra-margin {
+  margin: 2.5rem !important;
+}
+.extra-margin-top {
+  margin-top: 2.5rem !important;
+}
+.extra-margin-right {
+  margin-right: 2.5rem !important;
+}
+.extra-margin-bottom {
+  margin-bottom: 2.5rem !important;
+}
+.extra-margin-left {
+  margin-left: 2.5rem !important;
+}
+
+// Padding for specific grid elements (as for margin above).
+.no-padding {
+  padding: 0 !important;
+}
+.no-padding-top {
+  padding-top: 0 !important;
+}
+.no-padding-right {
+  padding-right: 0 !important;
+}
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+.no-padding-left {
+  padding-left: 0 !important;
+}
+
+.tiny-padding {
+  padding: 0.5rem !important;
+}
+.tiny-padding-top {
+  padding-top: 0.5rem !important;
+}
+.tiny-padding-right {
+  padding-right: 0.5rem !important;
+}
+.tiny-padding-bottom {
+  padding-bottom: 0.5rem !important;
+}
+.tiny-padding-left {
+  padding-left: 0.5rem !important;
+}
+
+.some-padding {
+  padding: 1.5rem !important;
+}
+.some-padding-top {
+  padding-top: 1.5rem !important;
+}
+.some-padding-right {
+  padding-right: 1.5rem !important;
+}
+.some-padding-bottom {
+  padding-bottom: 1.5rem !important;
+}
+.some-padding-left {
+  padding-left: 1.5rem !important;
+}
+
+.extra-padding {
+  padding: 2.5rem !important;
+}
+.extra-padding-top {
+  padding-top: 2.5rem !important;
+}
+.extra-padding-right {
+  padding-right: 2.5rem !important;
+}
+.extra-padding-bottom {
+  padding-bottom: 2.5rem !important;
+}
+.extra-padding-left {
+  padding-left: 2.5rem !important;
+}
+
+
+/*--------------------------------------------------
+  Images
+--------------------------------------------------*/
+
+img {
+  &.block { display: block; }
+	&.expand { width: 100%; }
+  &.inline-block { display: inline-block; }
+  &.inline-icon {
+    display: inline-block;
+    height: 2rem;
+		max-width: none;
+    vertical-align: middle;
+    margin-right: 0.375rem;
+  }
+}
+
+
+/*--------------------------------------------------
+  Intro Section & Call to Action
+--------------------------------------------------*/
+
+.intro-section {
+  background-image: url(../images/header-photo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  min-height: rem-calc(300);
+  @media #{$medium-up} { min-height: rem-calc(400); }
+  @media #{$large-up}  { min-height: rem-calc(500); }
+}
+
+.intro-hashtag {
+  // font-weight: $font-weight-bold;
+  color: $slate;
+  position: relative;
+  display: inline-block;
+  margin: 0 0 1em;
+  padding: 0;
+  line-height: 1.2;
+  font-size: $h2-font-size;
+  @media #{$medium-up} { font-size: rem-calc(60); }
+  @media #{$large-up}  { font-size: rem-calc(70); }
+  @media #{$xlarge-up} { font-size: rem-calc(90); }
+  span {
+    font-family: $font-marker;
+    position: absolute;
+    top: 100%;
+    font-size: 1.6em;
+    color: $oil;
+    opacity: 0.85;
+    margin-top: -0.5em;
+    left: 0.5em;
+    @media #{$medium-up} { left: 29%; margin-top: -0.62em; }
+    @media #{$large-up} { left: 57.5%; margin-top: -0.62em; }
+  }
+}
+
+.intro-call-to-action {
+  padding: 0.375em 0.5em;
+  background-color: $red;
+  max-width: 11.75em;
+  text-align: center;
+  color: $off-white;
+  font-weight: $font-weight-bold;
+  font-size: 1rem;
+  line-height: 1.2;
+  @media #{$medium-up} { font-size: $h5-font-size; max-width: none; margin-left: $column-gutter/-2; text-align: left; }
+  @media #{$large-up}  { font-size: $h4-font-size; }
+  /* http://colorzilla.com/gradient-editor/#d95762+5,4b5363+95&amp;0.7+0,0.7+100 */
+  background: -moz-linear-gradient(left,  rgba(217,87,98,0.7) 0%, rgba(75,83,99,0.7) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(217,87,98,0.7)), color-stop(100%,rgba(75,83,99,0.7)));
+  background: -webkit-linear-gradient(left,  rgba(217,87,98,0.7) 0%,rgba(75,83,99,0.7) 100%);
+  background: -o-linear-gradient(left,  rgba(217,87,98,0.7) 0%,rgba(75,83,99,0.7) 100%);
+  background: -ms-linear-gradient(left,  rgba(217,87,98,0.7) 0%,rgba(75,83,99,0.7) 100%);
+  background: linear-gradient(to right,  rgba(217,87,98,0.7) 0%,rgba(75,83,99,0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3d95762', endColorstr='#b34b5363',GradientType=1 );
+}
+
+
+/*--------------------------------------------------
+  Canvas
+--------------------------------------------------*/
+
 .canvas-container {
   position: relative;
   width: 100% !important;

@@ -29,26 +29,24 @@ canvas.add(overlay);
 
 
 // Add brand text:
-function addBrandText(){
-    var brandText = new fabric.Text(
-        '#Memer', {
-            // turn off interractions...
-            evented: false,
-            selectable: false,
-            // add some style...
-            fontFamily: 'Titillium Web',
-            fontSize: 75,
-            fontStyle: 'normal',
-            fontWeight: '700',
-            fill: 'rgba(255,255,255,1)',
-            opacity: 1,
-            left: 15,
-            top: 10,
-            textAlign: 'left'
-        }
-    );
-    canvas.add(brandText);
-}
+var brandText = new fabric.Text(
+    '#SheWillBe', {
+        // turn off interractions...
+        evented: false,
+        selectable: false,
+        // add some style...
+        fontFamily: 'Titillium Web',
+        fontSize: 75,
+        fontStyle: 'normal',
+        fontWeight: '700',
+        fill: 'rgba(255,255,255,1)',
+        opacity: 1,
+        left: 15,
+        top: 10,
+        textAlign: 'left'
+    }
+);
+canvas.add(brandText);
 
 
 // Load an image:
