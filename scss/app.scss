@@ -412,6 +412,7 @@ img {
   height: 0 !important;
   padding-bottom: 100%;
   margin: auto;
+  z-index: 10;
 }
 #canvas {
   position: absolute;
@@ -424,4 +425,13 @@ img {
 .upper-canvas {
   width: 100% !important;
   height: 100% !important;
+}
+
+#textarea-anchor {
+  position: absolute;
+  bottom: rem-calc(-8);
+  height: 25%;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
 }

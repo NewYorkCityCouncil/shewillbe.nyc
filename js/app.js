@@ -4,9 +4,6 @@ $(document).foundation();
 
 
 $( document ).ready(function() {
-  $('textarea').bind('focusin focus', function(e){
-  e.preventDefault();
-})
 });
 
 
@@ -176,6 +173,12 @@ userText.on('editing:exited', function () {
     if (!textOriginal) {
         userText.set({ text: '___' });
     }
+});
+
+
+// don't scroll to the hidden textarea
+userText.on('editing:entered', function () {
+    $('#textarea-anchor').scrollintoview();
 });
 
 

@@ -11029,9 +11029,10 @@ img.inline-icon {
   height: 0 !important;
   padding-bottom: 100%;
   margin: auto;
+  z-index: 10;
 }
 
-/* line 416, ../scss/app.scss */
+/* line 417, ../scss/app.scss */
 #canvas {
   position: absolute;
   top: 0;
@@ -11041,8 +11042,18 @@ img.inline-icon {
   height: 100% !important;
 }
 
-/* line 424, ../scss/app.scss */
+/* line 425, ../scss/app.scss */
 .upper-canvas {
   width: 100% !important;
   height: 100% !important;
+}
+
+/* line 430, ../scss/app.scss */
+#textarea-anchor {
+  position: absolute;
+  bottom: -0.5rem;
+  height: 25%;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
 }
