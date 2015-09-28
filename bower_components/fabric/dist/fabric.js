@@ -22514,7 +22514,7 @@ fabric.util.object.extend(fabric.IText.prototype, /** @lends fabric.IText.protot
     // this.hiddenTextarea.style.cssText = 'position: fixed; bottom: 20px; left: 0px; opacity: 0;'
     //                                     + ' width: 0px; height: 0px; z-index: -999;';
     // fabric.document.body.appendChild(this.hiddenTextarea);
-    this.hiddenTextarea.style.cssText = 'position: relative; left: -9999px; opacity: 0;'
+    this.hiddenTextarea.style.cssText = 'position: relative; left: -9999px; top: 50%; opacity: 0;'
                                         + ' width: 0px; height: 0px; z-index: -999;';
     textareaAnchor = document.getElementById('textarea-anchor');
     textareaAnchor.appendChild(this.hiddenTextarea);
