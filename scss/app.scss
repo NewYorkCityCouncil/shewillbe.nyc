@@ -66,7 +66,7 @@
 }
 
 body {
-  background: $tan-light url(../images/grid.gif) 0 0 repeat;
+  background: $body-bg url(../images/grid.gif) 0 0 repeat;
   @media #{$retina} {
     background-image: url(../images/grid@2x.gif);
     background-size: 20px 100px;

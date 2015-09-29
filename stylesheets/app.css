@@ -89,7 +89,7 @@ body {
 
 /* line 438, ../bower_components/foundation/scss/foundation/components/_global.scss */
 body {
-  background: #f5e9de;
+  background: #f9f2ec;
   color: #333333;
   cursor: auto;
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -8968,7 +8968,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 262, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   color: #6f6f6f;
-  font-size: 60%;
+  font-size: 77%;
   line-height: 0;
 }
 
@@ -9037,7 +9037,7 @@ b {
 
 /* line 299, ../bower_components/foundation/scss/foundation/components/_type.scss */
 small {
-  font-size: 60%;
+  font-size: 77%;
   line-height: inherit;
 }
 
@@ -10527,7 +10527,7 @@ th.hide-for-touch {
 
 /* line 68, ../scss/app.scss */
 body {
-  background: #f5e9de url(../images/grid.gif) 0 0 repeat;
+  background: #f9f2ec url(../images/grid.gif) 0 0 repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 68, ../scss/app.scss */
