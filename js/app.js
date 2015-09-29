@@ -34,7 +34,34 @@ function handleImage(e){
     reader.onload = function(event){
         var img = new Image();
         img.onload = function(){
-            var imgInstance = new fabric.Image(img),
+
+            EXIF.getData(this, function() {
+                var orientation = EXIF.getTag(this, "Orientation");
+                switch (orientation) {
+                  case 1:
+                    $rotation=0;break;
+                  case 2:
+                    $rotation=0;break;
+                  case 3:
+                    $rotation=180;break;
+                  case 4:
+                    $rotation=180;break;
+                  case 5:
+                    $rotation=0;break;
+                  case 6:
+                    $rotation=90;break;
+                  case 7:
+                    $rotation=0;break;
+                  case 8:
+                    $rotation=-90;break;
+                  default:
+                    $rotation=0;break;
+                }
+            });
+
+            var imgInstance = new fabric.Image(img, {
+                  angle: $rotation
+                }),
                 iw = img.width,
                 ih = img.height;
             if (iw > ih) {
