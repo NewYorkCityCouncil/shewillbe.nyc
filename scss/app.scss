@@ -45,7 +45,7 @@
 
 // collapse empty title
 .top-bar {
-  box-shadow: 0 5px 0 rgba($slate, 0.1);
+  box-shadow: 0 5px 0 rgba($oil, 0.1);
   .name h1 a {
     padding: 0;
   }
@@ -72,7 +72,7 @@ body {
     background-size: 20px 100px;
   }
 }
-.alt-bg {
+.alt-bg-gradient {
   color: $off-white;
   background-color: $red;
   background: -moz-linear-gradient(left,  rgba($slate,1) 0%, rgba($red,1) 100%);
@@ -83,6 +83,9 @@ body {
   background: linear-gradient(to right,  rgba($slate,1) 0%,rgba($red,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b5363', endColorstr='#d95762',GradientType=1 );
 }
+.alt-bg-red { color: $off-white; background-color: $red; }
+.alt-bg-slate { color: $off-white; background-color: $slate; }
+.alt-bg-tan { background-color: $tan; }
 
 // Can't set color:inherit in _settings.scss 'cause $header-font-color is used in subheader/small/blockquote calculations.
 h1, h2, h3, h4, h5, h6 {
@@ -131,6 +134,9 @@ small.xsmall {
 
 .shadowed {
   box-shadow: 8px 8px 0 rgba($oil, 0.2);
+}
+.inner-shadowed {
+  box-shadow: inset 0 5px 0 rgba($oil, 0.1);
 }
 
 .ghosted {
