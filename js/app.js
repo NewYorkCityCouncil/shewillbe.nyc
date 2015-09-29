@@ -47,11 +47,11 @@ function handleImage(e){
                   case 4:
                     $rotation=180;break;
                   case 5:
-                    $rotation=0;break;
+                    $rotation=90;break;
                   case 6:
                     $rotation=90;break;
                   case 7:
-                    $rotation=0;break;
+                    $rotation=-90;break;
                   case 8:
                     $rotation=-90;break;
                   default:
