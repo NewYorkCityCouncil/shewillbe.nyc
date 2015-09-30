@@ -5,9 +5,36 @@ $(document).foundation();
 
 $( document ).ready(function() {
 
-  $('#toggle--all-partners-list').click(function() {
-    $('#all-partners-list').slideToggle();
-  });
+    $('#toggle--all-partners-list').click(function() {
+        $('#all-partners-list').slideToggle();
+    });
+
+    $('<span class="strong">strong!</span>').appendTo('.intro-hashtag').hide();
+    $('<span class="healthy">healthy!</span>').appendTo('.intro-hashtag').hide();
+    $('<span class="smart">smart!</span>').appendTo('.intro-hashtag').hide();
+    $('<span class="fearless">fearless!</span>').appendTo('.intro-hashtag').hide();
+
+    function playslider(){
+        $('.intro-hashtag .heard').delay(2000).fadeOut('fast');
+        $('.intro-hashtag .strong').delay(2000).fadeIn('slow', function(){
+            $(this).delay(2000).fadeOut('fast', function(){
+                $('.intro-hashtag .healthy').fadeIn('slow', function(){
+                    $(this).delay(2000).fadeOut('fast', function(){
+                        $('.intro-hashtag .smart').fadeIn('slow', function(){
+                            $(this).delay(2000).fadeOut('fast', function(){
+                                $('.intro-hashtag .fearless').fadeIn('slow', function(){
+                                    $(this).delay(2000).fadeOut('fast', function(){
+                                        $('.intro-hashtag .heard').fadeIn('slow', playslider);
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    }
+    playslider();
 
 });
 
