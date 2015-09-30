@@ -352,6 +352,7 @@ img {
     color: $oil;
     opacity: 0.85;
     margin-top: -0.5em;
+    padding-right: 0.25em;
     left: 0.5em;
     @media #{$large-up}  { left: 29%; margin-top: -0.62em; }
     @media #{$xlarge-up} { left: 57.5%; margin-top: -0.62em; }

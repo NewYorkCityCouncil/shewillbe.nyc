@@ -10949,6 +10949,7 @@ img.inline-icon {
   color: #333333;
   opacity: 0.85;
   margin-top: -0.5em;
+  padding-right: 0.25em;
   left: 0.5em;
 }
 @media only screen and (min-width: 52.0625em) {
@@ -10966,7 +10967,7 @@ img.inline-icon {
   }
 }
 
-/* line 361, ../scss/app.scss */
+/* line 362, ../scss/app.scss */
 .intro-call-to-action {
   padding: 0.375em 0.5em;
   max-width: 11.75em;
@@ -10985,7 +10986,7 @@ img.inline-icon {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3d95762', endColorstr='#b34b5363',GradientType=1 );
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 361, ../scss/app.scss */
+  /* line 362, ../scss/app.scss */
   .intro-call-to-action {
     font-size: 1.125rem;
     max-width: none;
@@ -10994,7 +10995,7 @@ img.inline-icon {
   }
 }
 @media only screen and (min-width: 52.0625em) {
-  /* line 361, ../scss/app.scss */
+  /* line 362, ../scss/app.scss */
   .intro-call-to-action {
     font-size: 1.4375rem;
   }
@@ -11003,7 +11004,7 @@ img.inline-icon {
 /*--------------------------------------------------
   Canvas
 --------------------------------------------------*/
-/* line 386, ../scss/app.scss */
+/* line 387, ../scss/app.scss */
 .memer {
   position: relative;
   background: #f9f2ec;
@@ -11011,39 +11012,39 @@ img.inline-icon {
   border: 0.5rem solid #f9f2ec;
 }
 @media only screen and (min-width: 52.0625em) {
-  /* line 386, ../scss/app.scss */
+  /* line 387, ../scss/app.scss */
   .memer {
     margin-top: -6.25rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 386, ../scss/app.scss */
+  /* line 387, ../scss/app.scss */
   .memer {
     margin-top: -7.5rem;
     border-width: 0.75rem;
   }
 }
 
-/* line 399, ../scss/app.scss */
+/* line 400, ../scss/app.scss */
 .memer--buttons {
   background: #CCCCCC;
   position: relative;
 }
-/* line 402, ../scss/app.scss */
+/* line 403, ../scss/app.scss */
 .memer--buttons label, .memer--buttons button {
   position: absolute;
 }
-/* line 405, ../scss/app.scss */
+/* line 406, ../scss/app.scss */
 .memer--buttons a, .memer--buttons label, .memer--buttons button {
   font-size: 1.4375rem;
   padding: 0.75rem;
 }
-/* line 409, ../scss/app.scss */
+/* line 410, ../scss/app.scss */
 .memer--buttons .button-off {
   margin-left: -99999px !important;
 }
 
-/* line 414, ../scss/app.scss */
+/* line 415, ../scss/app.scss */
 .canvas-wrapper,
 .canvas-container {
   position: relative;
@@ -11054,7 +11055,7 @@ img.inline-icon {
   z-index: 10;
 }
 
-/* line 423, ../scss/app.scss */
+/* line 424, ../scss/app.scss */
 #canvas {
   position: absolute;
   top: 0;
@@ -11064,13 +11065,13 @@ img.inline-icon {
   height: 100% !important;
 }
 
-/* line 431, ../scss/app.scss */
+/* line 432, ../scss/app.scss */
 .upper-canvas {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* line 436, ../scss/app.scss */
+/* line 437, ../scss/app.scss */
 #textarea-anchor {
   position: absolute;
   bottom: -0.5rem;
@@ -11080,13 +11081,13 @@ img.inline-icon {
   overflow: hidden;
 }
 
-/* line 445, ../scss/app.scss */
+/* line 446, ../scss/app.scss */
 #all-partners-list {
   display: none;
   list-style-type: none;
   text-align: center;
 }
-/* line 449, ../scss/app.scss */
+/* line 450, ../scss/app.scss */
 #all-partners-list li {
   display: inline-block;
   margin: 0 0.5rem;
