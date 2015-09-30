@@ -9,22 +9,24 @@ $( document ).ready(function() {
         $('#all-partners-list').slideToggle();
     });
 
-    $('<span class="strong">strong!</span>').appendTo('.intro-hashtag').hide();
-    $('<span class="healthy">healthy!</span>').appendTo('.intro-hashtag').hide();
-    $('<span class="smart">smart!</span>').appendTo('.intro-hashtag').hide();
-    $('<span class="fearless">fearless!</span>').appendTo('.intro-hashtag').hide();
+    $('<span class="strong">strong</span>').appendTo('.intro-hashtag').hide();
+    $('<span class="healthy">healthy</span>').appendTo('.intro-hashtag').hide();
+    $('<span class="smart">smart</span>').appendTo('.intro-hashtag').hide();
+    $('<span class="fearless">fearless</span>').appendTo('.intro-hashtag').hide();
 
+    var swapTime = 1500;
     function playslider(){
-        $('.intro-hashtag .heard').delay(2000).fadeOut('fast');
-        $('.intro-hashtag .strong').delay(2000).fadeIn('slow', function(){
-            $(this).delay(2000).fadeOut('fast', function(){
-                $('.intro-hashtag .healthy').fadeIn('slow', function(){
-                    $(this).delay(2000).fadeOut('fast', function(){
-                        $('.intro-hashtag .smart').fadeIn('slow', function(){
-                            $(this).delay(2000).fadeOut('fast', function(){
-                                $('.intro-hashtag .fearless').fadeIn('slow', function(){
-                                    $(this).delay(2000).fadeOut('fast', function(){
-                                        $('.intro-hashtag .heard').fadeIn('slow', playslider);
+        $('.intro-hashtag .heard').delay(swapTime).fadeOut('fast', function(){
+            $('.intro-hashtag .strong').fadeIn('slow', function(){
+                $(this).delay(swapTime).fadeOut('fast', function(){
+                    $('.intro-hashtag .healthy').fadeIn('slow', function(){
+                        $(this).delay(swapTime).fadeOut('fast', function(){
+                            $('.intro-hashtag .smart').fadeIn('slow', function(){
+                                $(this).delay(swapTime).fadeOut('fast', function(){
+                                    $('.intro-hashtag .fearless').fadeIn('slow', function(){
+                                        $(this).delay(swapTime).fadeOut('fast', function(){
+                                            $('.intro-hashtag .heard').fadeIn('slow', playslider);
+                                        });
                                     });
                                 });
                             });
@@ -34,7 +36,7 @@ $( document ).ready(function() {
             });
         });
     }
-    playslider();
+    setTimeout(function(){ playslider() }, 2000);
 
 });
 
