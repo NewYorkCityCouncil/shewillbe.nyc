@@ -47,7 +47,8 @@
 .top-bar {
   box-shadow: 0 5px 0 rgba($oil, 0.1);
   .name h1 a {
-    padding: 0;
+    color: $slate;
+    cursor: text;
   }
 }
 
