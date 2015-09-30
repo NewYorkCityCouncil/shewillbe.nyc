@@ -441,3 +441,13 @@ img {
   z-index: 1;
   overflow: hidden;
 }
+
+#all-partners-list {
+  display: none;
+  list-style-type: none;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 rem-calc(8)
+  }
+}

@@ -4,6 +4,11 @@ $(document).foundation();
 
 
 $( document ).ready(function() {
+
+  $('#toggle--all-partners-list').click(function() {
+    $('#all-partners-list').slideToggle();
+  });
+
 });
 
 

@@ -11079,3 +11079,15 @@ img.inline-icon {
   z-index: 1;
   overflow: hidden;
 }
+
+/* line 445, ../scss/app.scss */
+#all-partners-list {
+  display: none;
+  list-style-type: none;
+  text-align: center;
+}
+/* line 449, ../scss/app.scss */
+#all-partners-list li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
