@@ -317,20 +317,33 @@ img {
   }
 }
 
+.selfie {}
+
 
 /*--------------------------------------------------
   Intro Section & Call to Action
 --------------------------------------------------*/
 
 .intro-section {
-  background-image: url(../images/header-photo.jpg);
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
   min-height: rem-calc(300);
-  @media #{$large-up}  { min-height: rem-calc(400); }
-  @media #{$xlarge-up} { min-height: rem-calc(500); }
+  background-image: url(../images/header-photo-b-640x320.jpg);
+  @media #{$retina} { background-image: url(../images/header-photo-b-900x450.jpg); }
+  @media #{$medium-up}  {
+    min-height: rem-calc(400);
+    background-image: url(../images/header-photo-b-900x450.jpg);
+    @media #{$retina} { background-image: url(../images/header-photo-b-1600x800.jpg); }
+  }
+  @media #{$large-up} {
+    min-height: rem-calc(500);
+    @media #{$retina} { background-image: url(../images/header-photo-b.jpg); }
+  }
+  @media #{$xlarge-up} {
+    min-height: rem-calc(550);
+  }
 }
 
 .intro-hashtag {
@@ -339,10 +352,11 @@ img {
   position: relative;
   display: inline-block;
   margin: 0 0 1em;
-  padding: 0;
+  padding: 40px 0 0;
   line-height: 1.2;
   font-size: $h2-font-size;
-  @media #{$medium-up}  { font-size: rem-calc(60); }
+  @media #{$medium-up}  { font-size: $h2-font-size*1.5; padding-top: 60px; }
+  @media #{$large-up}  { padding-top: 90px; }
   @media #{$xlarge-up}  { font-size: rem-calc(70); }
   @media #{$xxlarge-up} { font-size: rem-calc(90); }
   span {
@@ -352,11 +366,12 @@ img {
     font-size: 1.6em;
     color: $oil;
     opacity: 0.85;
-    margin-top: -0.5em;
+    margin-top: -0.55em;
     padding-right: 0.25em;
-    left: 0.5em;
-    @media #{$large-up}  { left: 29%; margin-top: -0.62em; }
-    @media #{$xlarge-up} { left: 57.5%; margin-top: -0.62em; }
+    left: 0.25em;
+    @media #{$medium-up}  { left: 15%; margin-top: -0.62em; }
+    @media #{$large-up}  { left: 30%; }
+    @media #{$xlarge-up} { left: 40%; }
   }
 }
 

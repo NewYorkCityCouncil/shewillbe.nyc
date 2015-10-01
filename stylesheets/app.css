@@ -10891,57 +10891,91 @@ img.inline-icon {
 /*--------------------------------------------------
   Intro Section & Call to Action
 --------------------------------------------------*/
-/* line 325, ../scss/app.scss */
+/* line 327, ../scss/app.scss */
 .intro-section {
-  background-image: url(../images/header-photo.jpg);
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
   min-height: 18.75rem;
+  background-image: url(../images/header-photo-b-640x320.jpg);
 }
-@media only screen and (min-width: 52.0625em) {
-  /* line 325, ../scss/app.scss */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 327, ../scss/app.scss */
   .intro-section {
-    min-height: 25rem;
+    background-image: url(../images/header-photo-b-900x450.jpg);
   }
 }
-@media only screen and (min-width: 64.0625em) {
-  /* line 325, ../scss/app.scss */
+@media only screen and (min-width: 40.0625em) {
+  /* line 327, ../scss/app.scss */
+  .intro-section {
+    min-height: 25rem;
+    background-image: url(../images/header-photo-b-900x450.jpg);
+  }
+}
+@media only screen and (min-width: 40.0625em) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 40.0625em) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 40.0625em) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-width: 40.0625em) and (min-device-pixel-ratio: 2), only screen and (min-width: 40.0625em) and (min-resolution: 192dpi), only screen and (min-width: 40.0625em) and (min-resolution: 2dppx) {
+  /* line 327, ../scss/app.scss */
+  .intro-section {
+    background-image: url(../images/header-photo-b-1600x800.jpg);
+  }
+}
+
+@media only screen and (min-width: 52.0625em) {
+  /* line 327, ../scss/app.scss */
   .intro-section {
     min-height: 31.25rem;
   }
 }
+@media only screen and (min-width: 52.0625em) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 52.0625em) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 52.0625em) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-width: 52.0625em) and (min-device-pixel-ratio: 2), only screen and (min-width: 52.0625em) and (min-resolution: 192dpi), only screen and (min-width: 52.0625em) and (min-resolution: 2dppx) {
+  /* line 327, ../scss/app.scss */
+  .intro-section {
+    background-image: url(../images/header-photo-b.jpg);
+  }
+}
 
-/* line 336, ../scss/app.scss */
+@media only screen and (min-width: 64.0625em) {
+  /* line 327, ../scss/app.scss */
+  .intro-section {
+    min-height: 34.375rem;
+  }
+}
+
+/* line 349, ../scss/app.scss */
 .intro-hashtag {
   color: #4b5363;
   position: relative;
   display: inline-block;
   margin: 0 0 1em;
-  padding: 0;
+  padding: 40px 0 0;
   line-height: 1.2;
   font-size: 2.3125rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 336, ../scss/app.scss */
+  /* line 349, ../scss/app.scss */
   .intro-hashtag {
-    font-size: 3.75rem;
+    font-size: 3.46875rem;
+    padding-top: 60px;
+  }
+}
+@media only screen and (min-width: 52.0625em) {
+  /* line 349, ../scss/app.scss */
+  .intro-hashtag {
+    padding-top: 90px;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 336, ../scss/app.scss */
+  /* line 349, ../scss/app.scss */
   .intro-hashtag {
     font-size: 4.375rem;
   }
 }
 @media only screen and (min-width: 90.0625em) {
-  /* line 336, ../scss/app.scss */
+  /* line 349, ../scss/app.scss */
   .intro-hashtag {
     font-size: 5.625rem;
   }
 }
-/* line 348, ../scss/app.scss */
+/* line 362, ../scss/app.scss */
 .intro-hashtag span {
   font-family: "Permanent Marker", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   position: absolute;
@@ -10949,26 +10983,31 @@ img.inline-icon {
   font-size: 1.6em;
   color: #333333;
   opacity: 0.85;
-  margin-top: -0.5em;
+  margin-top: -0.55em;
   padding-right: 0.25em;
-  left: 0.5em;
+  left: 0.25em;
+}
+@media only screen and (min-width: 40.0625em) {
+  /* line 362, ../scss/app.scss */
+  .intro-hashtag span {
+    left: 15%;
+    margin-top: -0.62em;
+  }
 }
 @media only screen and (min-width: 52.0625em) {
-  /* line 348, ../scss/app.scss */
+  /* line 362, ../scss/app.scss */
   .intro-hashtag span {
-    left: 29%;
-    margin-top: -0.62em;
+    left: 30%;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 348, ../scss/app.scss */
+  /* line 362, ../scss/app.scss */
   .intro-hashtag span {
-    left: 57.5%;
-    margin-top: -0.62em;
+    left: 40%;
   }
 }
 
-/* line 363, ../scss/app.scss */
+/* line 378, ../scss/app.scss */
 .intro-call-to-action {
   padding: 0.375em 0.5em;
   max-width: 11.75em;
@@ -10987,7 +11026,7 @@ img.inline-icon {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3d95762', endColorstr='#b34b5363',GradientType=1 );
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 363, ../scss/app.scss */
+  /* line 378, ../scss/app.scss */
   .intro-call-to-action {
     font-size: 1.125rem;
     max-width: none;
@@ -10996,7 +11035,7 @@ img.inline-icon {
   }
 }
 @media only screen and (min-width: 52.0625em) {
-  /* line 363, ../scss/app.scss */
+  /* line 378, ../scss/app.scss */
   .intro-call-to-action {
     font-size: 1.4375rem;
   }
@@ -11005,7 +11044,7 @@ img.inline-icon {
 /*--------------------------------------------------
   Canvas
 --------------------------------------------------*/
-/* line 388, ../scss/app.scss */
+/* line 403, ../scss/app.scss */
 .memer {
   position: relative;
   background: #f9f2ec;
@@ -11013,30 +11052,30 @@ img.inline-icon {
   border: 0.5rem solid #f9f2ec;
 }
 @media only screen and (min-width: 52.0625em) {
-  /* line 388, ../scss/app.scss */
+  /* line 403, ../scss/app.scss */
   .memer {
     margin-top: -6.25rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 388, ../scss/app.scss */
+  /* line 403, ../scss/app.scss */
   .memer {
     margin-top: -7.5rem;
     border-width: 0.75rem;
   }
 }
 
-/* line 401, ../scss/app.scss */
+/* line 416, ../scss/app.scss */
 .memer--inner-wrapper {
   position: relative;
 }
-/* line 404, ../scss/app.scss */
+/* line 419, ../scss/app.scss */
 .memer--inner-wrapper label {
   position: absolute;
   top: 0;
   z-index: 20;
 }
-/* line 409, ../scss/app.scss */
+/* line 424, ../scss/app.scss */
 .memer--inner-wrapper button {
   position: absolute;
   bottom: 10%;
@@ -11044,13 +11083,13 @@ img.inline-icon {
   border-right: 1rem solid transparent;
   border-left: 1rem solid transparent;
 }
-/* line 416, ../scss/app.scss */
+/* line 431, ../scss/app.scss */
 .memer--inner-wrapper a, .memer--inner-wrapper label, .memer--inner-wrapper button {
   font-size: 1.4375rem;
   padding: 0.75rem;
   opacity: 1;
 }
-/* line 421, ../scss/app.scss */
+/* line 436, ../scss/app.scss */
 .memer--inner-wrapper a {
   position: relative;
   top: 100%;
@@ -11061,7 +11100,7 @@ img.inline-icon {
   -webkit-transition-delay: 2s;
   transition-delay: 2s;
 }
-/* line 431, ../scss/app.scss */
+/* line 446, ../scss/app.scss */
 .memer--inner-wrapper .button-off {
   position: absolute;
   margin-left: -99999px !important;
@@ -11071,7 +11110,7 @@ img.inline-icon {
   opacity: 0.2;
 }
 
-/* line 441, ../scss/app.scss */
+/* line 456, ../scss/app.scss */
 .canvas-wrapper,
 .canvas-container {
   position: relative;
@@ -11082,7 +11121,7 @@ img.inline-icon {
   z-index: 10;
 }
 
-/* line 450, ../scss/app.scss */
+/* line 465, ../scss/app.scss */
 #canvas {
   position: absolute;
   top: 0;
@@ -11092,13 +11131,13 @@ img.inline-icon {
   height: 100% !important;
 }
 
-/* line 458, ../scss/app.scss */
+/* line 473, ../scss/app.scss */
 .upper-canvas {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* line 463, ../scss/app.scss */
+/* line 478, ../scss/app.scss */
 #textarea-anchor {
   position: absolute;
   bottom: -0.5rem;
@@ -11108,13 +11147,13 @@ img.inline-icon {
   overflow: hidden;
 }
 
-/* line 472, ../scss/app.scss */
+/* line 487, ../scss/app.scss */
 #all-partners-list {
   display: none;
   list-style-type: none;
   text-align: center;
 }
-/* line 476, ../scss/app.scss */
+/* line 491, ../scss/app.scss */
 #all-partners-list li {
   display: inline-block;
   margin: 0 0.5rem;
