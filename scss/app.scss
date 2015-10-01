@@ -317,7 +317,15 @@ img {
   }
 }
 
-.selfie {}
+.selfie {
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: rotate(2deg) scale(1.2);
+    li:nth-child(even) & {
+      transform: rotate(-2deg) scale(1.2);
+    }
+  }
+}
 
 
 /*--------------------------------------------------
@@ -408,11 +416,14 @@ img {
   color: $slate;
   border: rem-calc(8) solid $off-white;
   @media #{$large-up} {
-    margin-top: -6.25rem;
+    margin-top: -5rem;
   }
   @media #{$xlarge-up} {
-    margin-top: -7.5rem;
+    margin-top: -6rem;
     border-width: rem-calc(12);
+  }
+  h3 {
+    line-height: 1.2;
   }
 }
 .memer--inner-wrapper {
