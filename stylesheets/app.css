@@ -10898,25 +10898,25 @@ img.inline-icon {
   background-size: cover;
   overflow-x: hidden;
   min-height: 18.75rem;
-  background-image: url(../images/header-photo-b-640x320.jpg);
+  background-image: url(../images/header-photo-c-640x320.jpg);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 327, ../scss/app.scss */
   .intro-section {
-    background-image: url(../images/header-photo-b-900x450.jpg);
+    background-image: url(../images/header-photo-c-900x450.jpg);
   }
 }
 @media only screen and (min-width: 40.0625em) {
   /* line 327, ../scss/app.scss */
   .intro-section {
     min-height: 25rem;
-    background-image: url(../images/header-photo-b-900x450.jpg);
+    background-image: url(../images/header-photo-c-900x450.jpg);
   }
 }
 @media only screen and (min-width: 40.0625em) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 40.0625em) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 40.0625em) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-width: 40.0625em) and (min-device-pixel-ratio: 2), only screen and (min-width: 40.0625em) and (min-resolution: 192dpi), only screen and (min-width: 40.0625em) and (min-resolution: 2dppx) {
   /* line 327, ../scss/app.scss */
   .intro-section {
-    background-image: url(../images/header-photo-b-1600x800.jpg);
+    background-image: url(../images/header-photo-c-1600x800.jpg);
   }
 }
 
@@ -10929,7 +10929,7 @@ img.inline-icon {
 @media only screen and (min-width: 52.0625em) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 52.0625em) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 52.0625em) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-width: 52.0625em) and (min-device-pixel-ratio: 2), only screen and (min-width: 52.0625em) and (min-resolution: 192dpi), only screen and (min-width: 52.0625em) and (min-resolution: 2dppx) {
   /* line 327, ../scss/app.scss */
   .intro-section {
-    background-image: url(../images/header-photo-b.jpg);
+    background-image: url(../images/header-photo-c.jpg);
   }
 }
 

@@ -330,16 +330,16 @@ img {
   background-size: cover;
   overflow-x: hidden;
   min-height: rem-calc(300);
-  background-image: url(../images/header-photo-b-640x320.jpg);
-  @media #{$retina} { background-image: url(../images/header-photo-b-900x450.jpg); }
+  background-image: url(../images/header-photo-c-640x320.jpg);
+  @media #{$retina} { background-image: url(../images/header-photo-c-900x450.jpg); }
   @media #{$medium-up}  {
     min-height: rem-calc(400);
-    background-image: url(../images/header-photo-b-900x450.jpg);
-    @media #{$retina} { background-image: url(../images/header-photo-b-1600x800.jpg); }
+    background-image: url(../images/header-photo-c-900x450.jpg);
+    @media #{$retina} { background-image: url(../images/header-photo-c-1600x800.jpg); }
   }
   @media #{$large-up} {
     min-height: rem-calc(500);
-    @media #{$retina} { background-image: url(../images/header-photo-b.jpg); }
+    @media #{$retina} { background-image: url(../images/header-photo-c.jpg); }
   }
   @media #{$xlarge-up} {
     min-height: rem-calc(550);
