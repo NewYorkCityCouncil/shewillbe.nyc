@@ -343,6 +343,8 @@ img {
   }
   @media #{$xlarge-up} {
     min-height: rem-calc(550);
+    background-image: url(../images/header-photo-c.jpg);
+    @media #{$retina} { background-image: url(../images/header-photo-c-3050x1524.jpg); }
   }
 }
 
