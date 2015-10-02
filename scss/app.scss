@@ -67,9 +67,9 @@
 }
 
 body {
-  background: $body-bg url(../images/grid.gif) 0 0 repeat;
+  background: $body-bg url('../images/grid.gif') 0 0 repeat;
   @media #{$retina} {
-    background-image: url(../images/grid@2x.gif);
+    background-image: url('../images/grid@2x.gif');
     background-size: 20px 100px;
   }
 }
@@ -130,8 +130,9 @@ small.xsmall {
 	white-space: nowrap;
 }
 
-.color-oil   { color: $oil; }
-.color-slate { color: $slate; }
+.color-oil   { color: $oil !important; }
+.color-slate { color: $slate !important; }
+.color-tan-light { color: $tan-light !important; }
 
 .shadowed {
   box-shadow: 8px 8px 0 rgba($oil, 0.2);
@@ -318,11 +319,16 @@ img {
 }
 
 .selfie {
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
   &:hover {
-    transform: rotate(2deg) scale(1.2);
+    -webkit-transform: rotate(2deg) scale(1.2);
+        -ms-transform: rotate(2deg) scale(1.2);
+            transform: rotate(2deg) scale(1.2);
     li:nth-child(even) & {
-      transform: rotate(-2deg) scale(1.2);
+      -webkit-transform: rotate(-2deg) scale(1.2);
+          -ms-transform: rotate(-2deg) scale(1.2);
+              transform: rotate(-2deg) scale(1.2);
     }
   }
 }
@@ -338,21 +344,21 @@ img {
   background-size: cover;
   overflow-x: hidden;
   min-height: rem-calc(300);
-  background-image: url(../images/header-photo-c-640x320.jpg);
-  @media #{$retina} { background-image: url(../images/header-photo-c-900x450.jpg); }
+  background-image: url('../images/header-photo-c-640x320.jpg');
+  @media #{$retina} { background-image: url('../images/header-photo-c-900x450.jpg'); }
   @media #{$medium-up}  {
     min-height: rem-calc(400);
-    background-image: url(../images/header-photo-c-900x450.jpg);
-    @media #{$retina} { background-image: url(../images/header-photo-c-1600x800.jpg); }
+    background-image: url('../images/header-photo-c-900x450.jpg');
+    @media #{$retina} { background-image: url('../images/header-photo-c-1600x800.jpg'); }
   }
   @media #{$large-up} {
     min-height: rem-calc(500);
-    @media #{$retina} { background-image: url(../images/header-photo-c.jpg); }
+    @media #{$retina} { background-image: url('../images/header-photo-c.jpg'); }
   }
   @media #{$xlarge-up} {
     min-height: rem-calc(550);
-    background-image: url(../images/header-photo-c.jpg);
-    @media #{$retina} { background-image: url(../images/header-photo-c-3050x1524.jpg); }
+    background-image: url('../images/header-photo-c.jpg');
+    @media #{$retina} { background-image: url('../images/header-photo-c-3050x1524.jpg'); }
   }
 }
 
@@ -505,4 +511,48 @@ img {
     display: inline-block;
     margin: 0 rem-calc(8)
   }
+}
+
+
+/*--------------------------------------------------
+  Letter
+--------------------------------------------------*/
+
+.speaker-photo {
+  @media #{$large-up} {
+    border-radius: 2px;
+    background-image: url('http://placehold.it/640x480');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 8px solid $off-white;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+    margin: auto;
+    left: rem-calc(16);
+    z-index: 2;
+    margin-top: rem-calc(40);
+    -webkit-transform: rotate(-4deg);
+        -ms-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+}
+.speaker-letter {
+  background-color: $tan-light;
+  color: $slate;
+  border-radius: 2px;
+  @media #{$large-up} {
+    position: relative;
+    z-index: 1;
+    right: rem-calc(16);
+    -webkit-transform: skew(-6deg, 3deg);
+        -ms-transform: skew(-6deg, 3deg);
+            transform: skew(-6deg, 3deg);
+  }
+}
+
+.mmv-signature {
+  width: 138px;
 }
