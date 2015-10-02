@@ -11232,9 +11232,9 @@ li:nth-child(even) .selfie:hover {
     position: relative;
     z-index: 1;
     right: 1rem;
-    -webkit-transform: skew(-6deg, 3deg);
-    -ms-transform: skew(-6deg, 3deg);
-    transform: skew(-6deg, 3deg);
+    -webkit-transform: skew(-5deg, 3deg);
+    -ms-transform: skew(-5deg, 3deg);
+    transform: skew(-5deg, 3deg);
   }
 }
 
