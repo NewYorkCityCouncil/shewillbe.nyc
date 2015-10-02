@@ -520,6 +520,7 @@ img {
 
 .speaker-photo {
   @media #{$large-up} {
+    background-color: $off-white;
     border-radius: 2px;
     background-image: url('http://placehold.it/640x480');
     background-position: center center;

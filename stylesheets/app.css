@@ -11199,6 +11199,7 @@ li:nth-child(even) .selfie:hover {
 @media only screen and (min-width: 52.0625em) {
   /* line 521, ../scss/app.scss */
   .speaker-photo {
+    background-color: #f9f2ec;
     border-radius: 2px;
     background-image: url("http://placehold.it/640x480");
     background-position: center center;
@@ -11219,14 +11220,14 @@ li:nth-child(even) .selfie:hover {
   }
 }
 
-/* line 542, ../scss/app.scss */
+/* line 543, ../scss/app.scss */
 .speaker-letter {
   background-color: #f5e9de;
   color: #4b5363;
   border-radius: 2px;
 }
 @media only screen and (min-width: 52.0625em) {
-  /* line 542, ../scss/app.scss */
+  /* line 543, ../scss/app.scss */
   .speaker-letter {
     position: relative;
     z-index: 1;
@@ -11237,7 +11238,7 @@ li:nth-child(even) .selfie:hover {
   }
 }
 
-/* line 556, ../scss/app.scss */
+/* line 557, ../scss/app.scss */
 .mmv-signature {
   width: 138px;
 }
