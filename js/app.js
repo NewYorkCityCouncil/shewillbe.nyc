@@ -7,6 +7,7 @@ $( document ).ready(function() {
 
     $('#toggle--all-partners-list').click(function() {
         $('#all-partners-list').slideToggle();
+        $(this).parent('p').slideToggle();
     });
 
     $('<span class="strong">strong</span>').appendTo('.intro-hashtag').hide();

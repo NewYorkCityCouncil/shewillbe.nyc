@@ -164,6 +164,18 @@ small.xsmall {
   }
 }
 
+.partners-list {
+  list-style-type: none;
+  color: $slate;
+  li {
+    display: inline-block;
+    margin: 0 rem-calc(16) 0 0;
+  }
+}
+#all-partners-list {
+  display: none;
+}
+
 
 /*--------------------------------------------------
   Grid & Box Model
@@ -510,16 +522,6 @@ img {
   width: 100%;
   z-index: 1;
   overflow: hidden;
-}
-
-#all-partners-list {
-  display: none;
-  list-style-type: none;
-  text-align: center;
-  li {
-    display: inline-block;
-    margin: 0 rem-calc(8)
-  }
 }
 
 

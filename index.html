@@ -6,7 +6,7 @@
     <title>SheWillBe</title>
 
     <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:300,700|Permanent+Marker' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:300,700%7CPermanent+Marker' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -79,7 +79,6 @@
           </ul>
         </div>
         <div class="columns medium-9 medium-centered large-5 large-uncentered">
-
           <div class="memer shadowed extra-margin-bottom">
             <h3 class="marker no-margin tiny-padding-right tiny-padding-left">Join the campaign!</h3>
             <ol class="tiny-padding-right tiny-padding-left tiny-margin-bottom">
@@ -94,11 +93,10 @@
               </div>
               <label for="input" id="input-button" class="button expand no-margin">Add your selfie&hellip;</label>
               <input type="file" id="input" class="hide" />
-              <button id="button--add-text" class="button expand no-margin button-off" href="#">Add a word&hellip;</button>
+              <button id="button--add-text" class="button expand no-margin button-off">Add a word&hellip;</button>
               <a id="button--save" class="button expand no-margin button-off" href="#">Download</a>
             </div>
           </div>
-
           <h3 class="text-center tiny-padding-bottom"><strong>Join the conversation on&hellip;</strong></h3>
           <ul class="small-block-grid-6">
             <li><a class="ghosted" href="https://twitter.com/SheWillBeNYC"><img src="images/social-icon-twitter.png" class=""></a></li>
@@ -146,28 +144,37 @@
     <div class="row extra-padding-bottom">
       <div class="columns medium-11 medium-centered large-10">
         <h2 id="working-group" class="marker some-padding-top">Working Group</h2>
-      </div>
-      <div class="columns medium-11 medium-centered large-uncentered large-5 large-push-1">
-        <p class="text-large">The New York City Council is convening stakeholders acress the City&mdash;including
+        <p class="text-large full-width">The New York City Council is convening stakeholders acress the City&mdash;including
           but not limited to community-based organizations, advocates, policy experts, and young
           women themselves&mdash;to determine what future innovation in programming and
           public/private partnerships can secure the futures of women and girls of color across
           the five boroughs.</p>
-      </div>
-      <div class="columns medium-11 medium-centered large-uncentered large-5 large-push-1">
-        <h5><strong>Steering Committee</strong></h5>
-        <ul class="square">
-          <li><a href="http://www.demos.org/">DEMOS</a></li>
-          <li><a href="http://fpwa.org/">Federation of Protestant Welfare Agencies</a></li>
-          <li><a href="https://www.legalmomentum.org/">Legal Momentum, <small>The Women's Legal Defense and Education Fund</small></a></li>
-          <li><a href="https://napawf.org/">National Asian Pacific American Women's Forum</a></li>
-          <li><a href="http://www.nbwji.org/">National Black Women's Justice Institute, Inc.</a></li>
-          <li><a href="http://www.latinainstitute.org/">National Latina Institute for Reproductive Health</a></li>
+        <ul class="partners-list color-slate no-margin no-padding">
+          <li><strong>Steering Committee:</strong></li>
+          <li><strong><a href="http://www.aapf.org/">African American Policy Forum</a></strong></li>
+          <li><strong><a href="http://www.blackwomensblueprint.org/">Black Women's Blueprint</a></strong></li>
+          <li><strong><a href="http://brotherhood-sistersol.org/">The Brotherhood/Sister Sol</a></strong></li>
+          <li><strong><a href="http://www.cases.org/">CASES</a></strong></li>
+          <li><strong><a href="http://www.cccnewyork.org/">Citizens' Committee for Children of New York</a></strong></li>
+          <li><strong><a href="http://www.demos.org/">DEMOS</a></strong></li>
+          <li><strong><a href="http://fpwa.org/">Federation of Protestant Welfare Agencies</a></strong></li>
+          <li><strong><a href="http://www.hmi.org/">Hetrick Martin Institute</a></strong></li>
+          <li><strong><a href="https://www.legalmomentum.org/">Legal Momentum</a></strong></li>
+          <li><strong><a href="http://www.mhbabrooklyn.com/">Mott Hall Bridges Academy</a></strong></li>
+          <li><strong><a href="http://www.mountsinai.org/patient-care/service-areas/adolescent-health-center">Mount Sinai Adolescent Clinic</a></strong></li>
+          <li><strong><a href="https://napawf.org/">National Asian Pacific American Women's Forum</a></strong></li>
+          <li><strong><a href="http://www.nbwji.org/">National Black Women's Justice Institute, Inc.</a></strong></li>
+          <li><strong><a href="http://www.latinainstitute.org/">National Latina Institute for Reproductive Health</a></strong></li>
+          <li><strong><a href="https://perscholas.org/">Per Scholas</a></strong></li>
+          <li><strong><a href="https://www.plannedparenthood.org/planned-parenthood-new-york-city">Planned Parenthood NYC</a></strong></li>
+          <li><strong><a href="https://www.opensocietyfoundations.org/grants/soros-justice-fellowships">Soros Justice Fellowship</a></strong></li>
+          <li><strong><a href="http://www.vera.org/">Vera Institute</a></strong></li>
+          <li><strong><a href="http://wri-ny.org/">Welfare Rights Initiative</a></strong></li>
+          <li><strong><a href="http://www.yearup.org/about-us/our-locations/new-york/">Year Up</a></strong></li>
         </ul>
-        <button id="toggle--all-partners-list" class="right tiny tiny-padding-top tiny-padding-bottom">View All Partners</button>
-      </div>
-      <div class="columns">
-        <ul id="all-partners-list" class="">
+        <p class="full-width"><button id="toggle--all-partners-list" class="right tiny tiny-padding-top tiny-padding-bottom">View All Partners</button></p>
+        <ul id="all-partners-list" class="partners-list no-margin no-padding">
+          <li style="display:block;"><hr/></li>
           <li><small>5 Borough Chamber of Commerce Coalition</small></li>
           <li><small>A Better Balance</small></li>
           <li><small>Achievement First</small></li>
@@ -201,6 +208,7 @@
           <li><small>Correctional Association of New York</small></li>
           <li><small>Columbia University Mailman School of Public Health</small></li>
           <li><small>CUNY Public Science Project</small></li>
+          <li><small>CUNY NYC Labor Market Information Service</small></li>
           <li><small>CUNY Womens Centers</small></li>
           <li><small>DEMOS</small></li>
           <li><small>Department of Education PS 56</small></li>
@@ -243,7 +251,6 @@
           <li><small>New Economy Project</small></li>
           <li><small>NYC Anti-Violence Project</small></li>
           <li><small>NYC Coalition for Reproductive Justice</small></li>
-          <li><small>CUNY NYC Labor Market Information Service</small></li>
           <li><small>New York Civil Liberties Union</small></li>
           <li><small>New York University</small></li>
           <li><small>New York Urban League</small></li>
@@ -293,7 +300,6 @@
           <li><small>YWCA Brooklyn</small></li>
           <li><small>YWCA of New York City</small></li>
         </ul>
-
       </div>
     </div>
 
