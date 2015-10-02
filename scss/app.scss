@@ -66,6 +66,16 @@
   }
 }
 
+strong {
+  letter-spacing: 0.02em;
+  word-spacing: 0.03em;
+  footer &,
+  .top-bar & {
+    letter-spacing: 0;
+    word-spacing: 0;
+  }
+}
+
 body {
   background: $body-bg url('../images/grid.gif') 0 0 repeat;
   @media #{$retina} {
@@ -396,7 +406,6 @@ img {
   max-width: 11.75em;
   text-align: center;
   color: $off-white;
-  font-weight: $font-weight-bold;
   font-size: 1rem;
   line-height: 1.2;
   @media #{$medium-up} { font-size: $h5-font-size; max-width: none; margin-left: $column-gutter/-2; text-align: left; }
