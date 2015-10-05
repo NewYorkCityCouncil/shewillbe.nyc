@@ -76,6 +76,10 @@ strong {
   }
 }
 
+.tight-kern {
+  letter-spacing: -0.05em;
+}
+
 body {
   background: $body-bg url('../images/grid.gif') 0 0 repeat;
   @media #{$retina} {
@@ -410,6 +414,9 @@ img {
     @media #{$medium-up}  { left: 15%; margin-top: -0.62em; }
     @media #{$large-up}  { left: 30%; }
     @media #{$xlarge-up} { left: 40%; }
+    &.ellasera {
+      font-size: 1.25em;
+    }
   }
 }
 

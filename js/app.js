@@ -10,21 +10,26 @@ $( document ).ready(function() {
         $(this).parent('p').slideToggle();
     });
 
-    $('<span class="strong">strong</span>').appendTo('.intro-hashtag').hide();
-    $('<span class="healthy">healthy</span>').appendTo('.intro-hashtag').hide();
-    $('<span class="smart">smart</span>').appendTo('.intro-hashtag').hide();
-    $('<span class="fearless">fearless</span>').appendTo('.intro-hashtag').hide();
+    $('<span class="word-2">strong</span>').appendTo('html:lang(en) .intro-hashtag').hide();
+    $('<span class="word-3">healthy</span>').appendTo('html:lang(en) .intro-hashtag').hide();
+    $('<span class="word-4">smart</span>').appendTo('html:lang(en) .intro-hashtag').hide();
+    $('<span class="word-5">fearless</span>').appendTo('html:lang(en) .intro-hashtag').hide();
+
+    $('<span class="word-2 tight-kern ellasera">fuerte</span>').appendTo('html:lang(es) .intro-hashtag').hide();
+    $('<span class="word-3 tight-kern ellasera">saludable</span>').appendTo('html:lang(es) .intro-hashtag').hide();
+    $('<span class="word-4 tight-kern ellasera">inteligente</span>').appendTo('html:lang(es) .intro-hashtag').hide();
+    $('<span class="word-5 tight-kern ellasera">valiente</span>').appendTo('html:lang(es) .intro-hashtag').hide();
 
     var swapTime = 1500;
     function playslider(){
         $('.intro-hashtag .heard').delay(swapTime).fadeOut('fast', function(){
-            $('.intro-hashtag .strong').fadeIn('slow', function(){
+            $('.intro-hashtag .word-2').fadeIn('slow', function(){
                 $(this).delay(swapTime).fadeOut('fast', function(){
-                    $('.intro-hashtag .healthy').fadeIn('slow', function(){
+                    $('.intro-hashtag .word-3').fadeIn('slow', function(){
                         $(this).delay(swapTime).fadeOut('fast', function(){
-                            $('.intro-hashtag .smart').fadeIn('slow', function(){
+                            $('.intro-hashtag .word-4').fadeIn('slow', function(){
                                 $(this).delay(swapTime).fadeOut('fast', function(){
-                                    $('.intro-hashtag .fearless').fadeIn('slow', function(){
+                                    $('.intro-hashtag .word-5').fadeIn('slow', function(){
                                         $(this).delay(swapTime).fadeOut('fast', function(){
                                             $('.intro-hashtag .heard').fadeIn('slow', playslider);
                                         });
