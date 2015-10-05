@@ -49,7 +49,7 @@ var canvas = new fabric.Canvas('canvas',{
 
 
 // Add image overlay:
-fabric.Image.fromURL( imagePath + 'selfie-overlay.png', function(img) {
+fabric.Image.fromURL( 'images/selfie-overlay.png', function(img) {
     img.set({
         evented: false,
         selectable: false,
