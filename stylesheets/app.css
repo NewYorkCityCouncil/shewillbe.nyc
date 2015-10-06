@@ -11224,7 +11224,6 @@ li:nth-child(even) .selfie:hover {
   .speaker-photo {
     background-color: #f9f2ec;
     border-radius: 2px;
-    background-image: url("http://placehold.it/640x480");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
