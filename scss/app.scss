@@ -180,6 +180,26 @@ small.xsmall {
   display: none;
 }
 
+.intiative-of-links {
+  white-space: nowrap;
+  padding: 0 1.25rem;
+  background-color: $off-white !important;
+  color: $slate;
+  a {
+    display: inline !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    font-weight: $font-weight-bold !important;
+  }
+  &:hover > a {
+    background-color: transparent !important;
+    color: $anchor-font-color !important;
+    &:hover {
+      color: $anchor-font-color-hover !important;
+    }
+  }
+}
+
 
 /*--------------------------------------------------
   Grid & Box Model
