@@ -168,6 +168,29 @@ small.xsmall {
   }
 }
 
+.underline {
+  position: relative;
+  &:after {
+    content: '~';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    z-index: -1;
+    width: 0.6em;
+    margin-left: -0.3em;
+    color: $yellow;
+    line-height: 1;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 0 -0.04em 0 $yellow, 0 0.04em 0 $yellow, 0 0.1em 0 $yellow, 0 0.14em 0 $yellow;
+    opacity: 0.5;
+    -webkit-transform: scale(2.875,0.7);
+        -ms-transform: scale(2.875,0.7);
+            transform: scale(2.875,0.7);
+  }
+}
+
 .partners-list {
   list-style-type: none;
   color: $slate;
