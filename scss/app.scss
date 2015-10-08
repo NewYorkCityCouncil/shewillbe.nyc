@@ -146,7 +146,14 @@ small.xsmall {
 
 .color-oil   { color: $oil !important; }
 .color-slate { color: $slate !important; }
-.color-tan-light { color: $tan-light !important; }
+.color-tan-light { color: $tan-light !important;}
+.color-oil,
+.color-slate,
+.color-tan-light {
+  @media print {
+    color: Black !important;
+  }
+}
 
 .shadowed {
   box-shadow: 8px 8px 0 rgba($oil, 0.2);
@@ -197,6 +204,12 @@ small.xsmall {
     &:hover {
       color: $anchor-font-color-hover !important;
     }
+  }
+}
+
+@media print {
+  a[href]:after {
+    font-weight: $font-weight-normal;
   }
 }
 
@@ -406,6 +419,9 @@ img {
     background-image: url('../images/header-photo-c.jpg');
     @media #{$retina} { background-image: url('../images/header-photo-c-3050x1524.jpg'); }
   }
+  @media print {
+    min-height: 0;
+  }
 }
 
 .intro-hashtag {
@@ -421,6 +437,9 @@ img {
   @media #{$large-up}  { padding-top: 90px; }
   @media #{$xlarge-up}  { font-size: rem-calc(70); }
   @media #{$xxlarge-up} { font-size: rem-calc(90); }
+  @media print {
+    padding-top: 0;
+  }
   span {
     font-family: $font-marker;
     position: absolute;
@@ -457,6 +476,11 @@ img {
   background: -ms-linear-gradient(left,  rgba($red,0.7) 0%,rgba($slate,0.7) 100%);
   background: linear-gradient(to right,  rgba($red,0.7) 0%,rgba($slate,0.7) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3d95762', endColorstr='#b34b5363',GradientType=1 );
+  @media print {
+    max-width: none;
+    font-size: $h2-font-size;
+    padding: 0;
+  }
 }
 
 
@@ -478,6 +502,11 @@ img {
   }
   h3 {
     line-height: 1.2;
+  }
+  @media print {
+    border: 2px solid Black;
+    padding: rem-calc(16);
+    display: inline-block;
   }
 }
 .memer--inner-wrapper {
