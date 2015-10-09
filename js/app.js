@@ -249,6 +249,7 @@ userText.on('editing:exited', function () {
     if (!textExists) {
         $('#button--add-text').removeClass('button-off');
         $('#button--save').addClass('button-off');
+        canvas.remove(userText);
     }
 });
 
