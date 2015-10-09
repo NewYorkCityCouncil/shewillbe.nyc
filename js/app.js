@@ -195,9 +195,8 @@ function memeText(e){
     // activate it...
     canvas.setActiveObject(userText);
     userText.enterEditing();
-    // show/hide buttons for saving...
+    // show add-text button...
     $('#button--add-text').addClass('button-off');
-    $('#button--save').removeClass('button-off');
 }
 
 
@@ -229,16 +228,27 @@ canvas.on('text:changed', function(e) {
       obj.setScaleY(1);
     }
 
+    // if there is text...
+    var textExists = userText.getText();
+    if (textExists) {
+        // show the save button...
+        $('#button--save').removeClass('button-off')
+    } else {
+        // hide the save button...
+        $('#button--save').addClass('button-off')
+    }
+
     canvas.renderAll();
 });
 
 
 // If user doesn't enter text, add placehoder:
 userText.on('editing:exited', function () {
-    var textOriginal = userText.getText();
+    var textExists = userText.getText();
 
-    if (!textOriginal) {
-        userText.set({ text: '___' });
+    if (!textExists) {
+        $('#button--add-text').removeClass('button-off');
+        $('#button--save').addClass('button-off');
     }
 });
 

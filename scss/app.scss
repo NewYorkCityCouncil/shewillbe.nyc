@@ -527,17 +527,11 @@ img {
   a, label, button {
     font-size: $h4-font-size;
     padding: rem-calc(12);
-    opacity: 1;
   }
   a {
     position: relative;
     top: 100%;
     margin-top: rem-calc(6) !important;
-    -webkit-transition: opacity 2s ease;
-       -moz-transition: opacity 2s ease;
-            transition: opacity 2s ease;
-    -webkit-transition-delay: 2s;
-            transition-delay: 2s;
   }
   .button-off {
     position: absolute;
@@ -545,7 +539,6 @@ img {
     right: auto;
     left: auto;
     width: 1px !important;
-    opacity: 0.2;
   }
 }
 
