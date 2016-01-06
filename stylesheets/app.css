@@ -6796,10 +6796,24 @@ li:nth-child(even) .selfie:hover {
   }
 }
 
+/* line 486, ../scss/app.scss */
+.intro-section p {
+  clear: both;
+  max-width: none;
+}
+
+@media only screen and (min-width: 40.0625em) {
+  /* line 490, ../scss/app.scss */
+  .intro-survey-button {
+    margin-left: 10%;
+    font-size: 2rem !important;
+  }
+}
+
 /*--------------------------------------------------
   Canvas
 --------------------------------------------------*/
-/* line 491, ../scss/app.scss */
+/* line 502, ../scss/app.scss */
 .memer {
   position: relative;
   background: #f9f2ec;
@@ -6807,24 +6821,24 @@ li:nth-child(even) .selfie:hover {
   border: 0.5rem solid #f9f2ec;
 }
 @media only screen and (min-width: 52.0625em) {
-  /* line 491, ../scss/app.scss */
+  /* line 502, ../scss/app.scss */
   .memer {
     margin-top: -5rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 491, ../scss/app.scss */
+  /* line 502, ../scss/app.scss */
   .memer {
     margin-top: -6rem;
     border-width: 0.75rem;
   }
 }
-/* line 503, ../scss/app.scss */
+/* line 514, ../scss/app.scss */
 .memer h3 {
   line-height: 1.2;
 }
 @media print {
-  /* line 491, ../scss/app.scss */
+  /* line 502, ../scss/app.scss */
   .memer {
     border: 2px solid Black;
     padding: 1rem;
@@ -6832,17 +6846,17 @@ li:nth-child(even) .selfie:hover {
   }
 }
 
-/* line 512, ../scss/app.scss */
+/* line 523, ../scss/app.scss */
 .memer--inner-wrapper {
   position: relative;
 }
-/* line 515, ../scss/app.scss */
+/* line 526, ../scss/app.scss */
 .memer--inner-wrapper label {
   position: absolute;
   top: 0;
   z-index: 20;
 }
-/* line 520, ../scss/app.scss */
+/* line 531, ../scss/app.scss */
 .memer--inner-wrapper button {
   position: absolute;
   bottom: 10%;
@@ -6850,18 +6864,18 @@ li:nth-child(even) .selfie:hover {
   border-right: 1rem solid transparent;
   border-left: 1rem solid transparent;
 }
-/* line 527, ../scss/app.scss */
+/* line 538, ../scss/app.scss */
 .memer--inner-wrapper a, .memer--inner-wrapper label, .memer--inner-wrapper button {
   font-size: 1.4375rem;
   padding: 0.75rem;
 }
-/* line 531, ../scss/app.scss */
+/* line 542, ../scss/app.scss */
 .memer--inner-wrapper a {
   position: relative;
   top: 100%;
   margin-top: 0.375rem !important;
 }
-/* line 536, ../scss/app.scss */
+/* line 547, ../scss/app.scss */
 .memer--inner-wrapper .button-off {
   position: absolute;
   margin-left: -99999px !important;
@@ -6870,7 +6884,7 @@ li:nth-child(even) .selfie:hover {
   width: 1px !important;
 }
 
-/* line 545, ../scss/app.scss */
+/* line 556, ../scss/app.scss */
 .canvas-wrapper,
 .canvas-container {
   position: relative;
@@ -6881,7 +6895,7 @@ li:nth-child(even) .selfie:hover {
   z-index: 10;
 }
 
-/* line 554, ../scss/app.scss */
+/* line 565, ../scss/app.scss */
 #canvas {
   position: absolute;
   top: 0;
@@ -6891,13 +6905,13 @@ li:nth-child(even) .selfie:hover {
   height: 100% !important;
 }
 
-/* line 562, ../scss/app.scss */
+/* line 573, ../scss/app.scss */
 .upper-canvas {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* line 567, ../scss/app.scss */
+/* line 578, ../scss/app.scss */
 #textarea-anchor {
   position: absolute;
   bottom: -0.5rem;
@@ -6910,7 +6924,7 @@ li:nth-child(even) .selfie:hover {
 /*--------------------------------------------------
   Letter
 --------------------------------------------------*/
-/* line 581, ../scss/app.scss */
+/* line 592, ../scss/app.scss */
 .speaker-photo {
   background-color: #f9f2ec;
   border-radius: 2px;
@@ -6926,7 +6940,7 @@ li:nth-child(even) .selfie:hover {
   margin: auto;
 }
 @media only screen and (min-width: 52.0625em) {
-  /* line 581, ../scss/app.scss */
+  /* line 592, ../scss/app.scss */
   .speaker-photo {
     left: 1rem;
     z-index: 2;
@@ -6937,14 +6951,14 @@ li:nth-child(even) .selfie:hover {
   }
 }
 
-/* line 603, ../scss/app.scss */
+/* line 614, ../scss/app.scss */
 .speaker-letter {
   background-color: #f5e9de;
   color: #4b5363;
   border-radius: 2px;
 }
 @media only screen and (min-width: 52.0625em) {
-  /* line 603, ../scss/app.scss */
+  /* line 614, ../scss/app.scss */
   .speaker-letter {
     position: relative;
     z-index: 1;
@@ -6955,7 +6969,7 @@ li:nth-child(even) .selfie:hover {
   }
 }
 
-/* line 617, ../scss/app.scss */
+/* line 628, ../scss/app.scss */
 .mmv-signature {
   width: 138px;
 }

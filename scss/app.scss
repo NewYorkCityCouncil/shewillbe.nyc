@@ -483,6 +483,17 @@ img {
   }
 }
 
+.intro-section p {
+  clear: both;
+  max-width: none;
+}
+.intro-survey-button {
+  @media #{$medium-up} {
+    margin-left: 10%;
+    font-size: 2rem !important;
+  }
+}
+
 
 /*--------------------------------------------------
   Canvas
