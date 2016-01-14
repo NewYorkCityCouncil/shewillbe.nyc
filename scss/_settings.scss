@@ -286,7 +286,7 @@ $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
 // We use these to style the <hr> element
 $hr-border-width: 2px;
 // $hr-border-style: solid;
-$hr-border-color: $yellow;
+$hr-border-color: scale-color($tan, $lightness: -5%);
 // $hr-margin: rem-calc(20);
 
 // We use these to style lists
@@ -304,11 +304,11 @@ $hr-border-color: $yellow;
 // $definition-list-margin-bottom: rem-calc(12);
 
 // We use these to style blockquotes
-// $blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
-// $blockquote-padding: rem-calc(9 20 0 19);
-// $blockquote-border: 1px solid $gainsboro;
+$blockquote-font-color: $slate;
+$blockquote-padding: rem-calc(12 16 12 16);
+$blockquote-border: 0.5rem solid $fuchsia;
 // $blockquote-cite-font-size: rem-calc(13);
-// $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
+$blockquote-cite-font-color: $slate;
 // $blockquote-cite-link-color: $blockquote-cite-font-color;
 
 // Acronym styles
