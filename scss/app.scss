@@ -115,23 +115,23 @@ h1, h2, h3, h4, h5, h6 {
 // Differently-sized paragraphs
 p {
   max-width: 48em;
-	&, ul, ol {
-	  &.text-small {
-	    font-size: rem-calc(13);
-	  }
-	  &.text-large {
-	    // font-size: 1.25rem;
-			font-size: rem-calc(19);
-	  }
-	  &.text-xlarge {
-	    // font-size: 1.5rem;
-			font-size: rem-calc(21);
-	  }
-	  &.text-xxlarge {
-	    // font-size: 1.75rem;
-			font-size: rem-calc(24);
-	  }
-	}
+}
+p, ul, ol {
+  &.text-small {
+    font-size: rem-calc(13);
+  }
+  &.text-large {
+    // font-size: 1.25rem;
+    font-size: rem-calc(19);
+  }
+  &.text-xlarge {
+    // font-size: 1.5rem;
+    font-size: rem-calc(21);
+  }
+  &.text-xxlarge {
+    // font-size: 1.75rem;
+    font-size: rem-calc(24);
+  }
 }
 
 small.xsmall {

@@ -6,7 +6,7 @@ $(document).foundation();
 $( document ).ready(function() {
 
     $('#toggle--all-partners-list').click(function() {
-        $('#all-partners-list').slideToggle();
+        $('#all-partners-list').removeClass('show-for-print').slideToggle();
         $(this).parent('p').slideToggle();
     });
 

@@ -6229,20 +6229,21 @@ h1.marker, h2.marker, h3.marker, h4.marker, h5.marker, h6.marker {
 p {
   max-width: 48em;
 }
-/* line 119, ../scss/app.scss */
-p.text-small, p ul.text-small, p ol.text-small {
+
+/* line 120, ../scss/app.scss */
+p.text-small, ul.text-small, ol.text-small {
   font-size: 0.8125rem;
 }
-/* line 122, ../scss/app.scss */
-p.text-large, p ul.text-large, p ol.text-large {
+/* line 123, ../scss/app.scss */
+p.text-large, ul.text-large, ol.text-large {
   font-size: 1.1875rem;
 }
-/* line 126, ../scss/app.scss */
-p.text-xlarge, p ul.text-xlarge, p ol.text-xlarge {
+/* line 127, ../scss/app.scss */
+p.text-xlarge, ul.text-xlarge, ol.text-xlarge {
   font-size: 1.3125rem;
 }
-/* line 130, ../scss/app.scss */
-p.text-xxlarge, p ul.text-xxlarge, p ol.text-xxlarge {
+/* line 131, ../scss/app.scss */
+p.text-xxlarge, ul.text-xxlarge, ol.text-xxlarge {
   font-size: 1.5rem;
 }
 
