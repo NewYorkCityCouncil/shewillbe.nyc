@@ -1,3 +1,7 @@
+**The [shewillbe.nyc](http://shewillbe.nyc/) website no longer uses this repo (which is a static GitHub Pages site). The site now runs on WordPress with code from the [wp-shewillbenyc](https://github.com/NewYorkCityCouncil/wp-shewillbenyc) repo.**
+
+-----
+
 # She Will Be
 
 New York City Council Young Women's Initiative
